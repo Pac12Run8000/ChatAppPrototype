@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		097EDEF12C79701A009F2DB8 /* ChatAppPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDEF02C79701A009F2DB8 /* ChatAppPrototypeApp.swift */; };
-		097EDEF32C79701A009F2DB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDEF22C79701A009F2DB8 /* ContentView.swift */; };
 		097EDEF52C79701C009F2DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097EDEF42C79701C009F2DB8 /* Assets.xcassets */; };
 		097EDEF82C79701C009F2DB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097EDEF72C79701C009F2DB8 /* Preview Assets.xcassets */; };
 		097EDF022C79701C009F2DB8 /* ChatAppPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF012C79701C009F2DB8 /* ChatAppPrototypeTests.swift */; };
 		097EDF0C2C79701C009F2DB8 /* ChatAppPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF0B2C79701C009F2DB8 /* ChatAppPrototypeUITests.swift */; };
 		097EDF0E2C79701C009F2DB8 /* ChatAppPrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF0D2C79701C009F2DB8 /* ChatAppPrototypeUITestsLaunchTests.swift */; };
 		097EDF1B2C798713009F2DB8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF1A2C798713009F2DB8 /* ChatMessage.swift */; };
-		097EDF1D2C79876C009F2DB8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF1C2C79876C009F2DB8 /* ChatView.swift */; };
-		097EDF1F2C7987A5009F2DB8 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF1E2C7987A5009F2DB8 /* ChatBubble.swift */; };
-		097EDF212C798809009F2DB8 /* TypingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF202C798809009F2DB8 /* TypingAnimation.swift */; };
+		097EDF252C79A597009F2DB8 /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF242C79A597009F2DB8 /* ChatInteractor.swift */; };
+		097EDF272C79A5C9009F2DB8 /* ChatInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF262C79A5C9009F2DB8 /* ChatInteractorOutputProtocol.swift */; };
+		097EDF292C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF282C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift */; };
+		097EDF2C2C79A660009F2DB8 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF2B2C79A660009F2DB8 /* ChatPresenter.swift */; };
+		097EDF2E2C79A699009F2DB8 /* ChatPresenterInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF2D2C79A699009F2DB8 /* ChatPresenterInputProtocol.swift */; };
+		097EDF302C79A6BD009F2DB8 /* ChatPresenterOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF2F2C79A6BD009F2DB8 /* ChatPresenterOutputProtocol.swift */; };
+		097EDF332C79A726009F2DB8 /* ChatRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF322C79A726009F2DB8 /* ChatRouter.swift */; };
+		097EDF352C79A751009F2DB8 /* ChatRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF342C79A751009F2DB8 /* ChatRouterProtocol.swift */; };
+		097EDF382C79A7CA009F2DB8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF372C79A7CA009F2DB8 /* ChatView.swift */; };
+		097EDF3B2C79A925009F2DB8 /* ChatViewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF3A2C79A925009F2DB8 /* ChatViewMediator.swift */; };
+		097EDF3E2C79AB20009F2DB8 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 /* Begin PBXFileReference section */
 		097EDEED2C79701A009F2DB8 /* ChatAppPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097EDEF02C79701A009F2DB8 /* ChatAppPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppPrototypeApp.swift; sourceTree = "<group>"; };
-		097EDEF22C79701A009F2DB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		097EDEF42C79701C009F2DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097EDEF72C79701C009F2DB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		097EDEFD2C79701C009F2DB8 /* ChatAppPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +55,17 @@
 		097EDF0B2C79701C009F2DB8 /* ChatAppPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppPrototypeUITests.swift; sourceTree = "<group>"; };
 		097EDF0D2C79701C009F2DB8 /* ChatAppPrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppPrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		097EDF1A2C798713009F2DB8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
-		097EDF1C2C79876C009F2DB8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		097EDF1E2C7987A5009F2DB8 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
-		097EDF202C798809009F2DB8 /* TypingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimation.swift; sourceTree = "<group>"; };
+		097EDF242C79A597009F2DB8 /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
+		097EDF262C79A5C9009F2DB8 /* ChatInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		097EDF282C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		097EDF2B2C79A660009F2DB8 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		097EDF2D2C79A699009F2DB8 /* ChatPresenterInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenterInputProtocol.swift; sourceTree = "<group>"; };
+		097EDF2F2C79A6BD009F2DB8 /* ChatPresenterOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenterOutputProtocol.swift; sourceTree = "<group>"; };
+		097EDF322C79A726009F2DB8 /* ChatRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRouter.swift; sourceTree = "<group>"; };
+		097EDF342C79A751009F2DB8 /* ChatRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRouterProtocol.swift; sourceTree = "<group>"; };
+		097EDF372C79A7CA009F2DB8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		097EDF3A2C79A925009F2DB8 /* ChatViewMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewMediator.swift; sourceTree = "<group>"; };
+		097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +116,16 @@
 		097EDEEF2C79701A009F2DB8 /* ChatAppPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				097EDF3C2C79AB09009F2DB8 /* Utilities */,
+				097EDF392C79A90A009F2DB8 /* Mediators */,
+				097EDF362C79A7B7009F2DB8 /* Views */,
+				097EDF312C79A715009F2DB8 /* Router */,
+				097EDF2A2C79A64C009F2DB8 /* Presenters */,
+				097EDF232C79A574009F2DB8 /* Interactors */,
+				097EDF222C79A533009F2DB8 /* Entities */,
 				097EDEF02C79701A009F2DB8 /* ChatAppPrototypeApp.swift */,
-				097EDEF22C79701A009F2DB8 /* ContentView.swift */,
 				097EDEF42C79701C009F2DB8 /* Assets.xcassets */,
 				097EDEF62C79701C009F2DB8 /* Preview Content */,
-				097EDF1A2C798713009F2DB8 /* ChatMessage.swift */,
-				097EDF1C2C79876C009F2DB8 /* ChatView.swift */,
-				097EDF1E2C7987A5009F2DB8 /* ChatBubble.swift */,
-				097EDF202C798809009F2DB8 /* TypingAnimation.swift */,
 			);
 			path = ChatAppPrototype;
 			sourceTree = "<group>";
@@ -137,6 +153,67 @@
 				097EDF0D2C79701C009F2DB8 /* ChatAppPrototypeUITestsLaunchTests.swift */,
 			);
 			path = ChatAppPrototypeUITests;
+			sourceTree = "<group>";
+		};
+		097EDF222C79A533009F2DB8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF1A2C798713009F2DB8 /* ChatMessage.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		097EDF232C79A574009F2DB8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF242C79A597009F2DB8 /* ChatInteractor.swift */,
+				097EDF262C79A5C9009F2DB8 /* ChatInteractorOutputProtocol.swift */,
+				097EDF282C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		097EDF2A2C79A64C009F2DB8 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF2B2C79A660009F2DB8 /* ChatPresenter.swift */,
+				097EDF2D2C79A699009F2DB8 /* ChatPresenterInputProtocol.swift */,
+				097EDF2F2C79A6BD009F2DB8 /* ChatPresenterOutputProtocol.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		097EDF312C79A715009F2DB8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF322C79A726009F2DB8 /* ChatRouter.swift */,
+				097EDF342C79A751009F2DB8 /* ChatRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		097EDF362C79A7B7009F2DB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF372C79A7CA009F2DB8 /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		097EDF392C79A90A009F2DB8 /* Mediators */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF3A2C79A925009F2DB8 /* ChatViewMediator.swift */,
+			);
+			path = Mediators;
+			sourceTree = "<group>";
+		};
+		097EDF3C2C79AB09009F2DB8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097EDF1D2C79876C009F2DB8 /* ChatView.swift in Sources */,
-				097EDF1F2C7987A5009F2DB8 /* ChatBubble.swift in Sources */,
+				097EDF332C79A726009F2DB8 /* ChatRouter.swift in Sources */,
+				097EDF3E2C79AB20009F2DB8 /* ChatBubble.swift in Sources */,
+				097EDF252C79A597009F2DB8 /* ChatInteractor.swift in Sources */,
+				097EDF2E2C79A699009F2DB8 /* ChatPresenterInputProtocol.swift in Sources */,
+				097EDF382C79A7CA009F2DB8 /* ChatView.swift in Sources */,
+				097EDF272C79A5C9009F2DB8 /* ChatInteractorOutputProtocol.swift in Sources */,
+				097EDF3B2C79A925009F2DB8 /* ChatViewMediator.swift in Sources */,
+				097EDF2C2C79A660009F2DB8 /* ChatPresenter.swift in Sources */,
+				097EDF292C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift in Sources */,
 				097EDF1B2C798713009F2DB8 /* ChatMessage.swift in Sources */,
-				097EDF212C798809009F2DB8 /* TypingAnimation.swift in Sources */,
-				097EDEF32C79701A009F2DB8 /* ContentView.swift in Sources */,
+				097EDF352C79A751009F2DB8 /* ChatRouterProtocol.swift in Sources */,
+				097EDF302C79A6BD009F2DB8 /* ChatPresenterOutputProtocol.swift in Sources */,
 				097EDEF12C79701A009F2DB8 /* ChatAppPrototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

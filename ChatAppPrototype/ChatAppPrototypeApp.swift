@@ -11,7 +11,7 @@ import SwiftUI
 struct ChatAppPrototypeApp: App {
     var body: some Scene {
         WindowGroup {
-            ChatView()
+            ChatRouter.createChatModule()
         }
     }
 }
