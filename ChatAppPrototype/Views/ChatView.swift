@@ -16,14 +16,14 @@ struct ChatView: View {
                         }
                     }
                     .padding(.horizontal)
-                    .padding(.top, 16) // Provide additional padding from the top
+                    .padding(.top, 8) // Provide additional padding from the top
                     .onChange(of: mediator.messages.count) { _ in
                         withAnimation {
                             scrollViewProxy.scrollTo(mediator.messages.last?.id, anchor: .bottom)
                         }
                     }
                 }
-                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top) // Respect the safe area
+                .background(Color.clear) // Keep the background transparent
             }
             
             HStack {
@@ -45,9 +45,12 @@ struct ChatView: View {
             }
             .padding()
         }
-        .background(Color(.systemIndigo).edgesIgnoringSafeArea([.leading, .trailing, .bottom])) // Avoid ignoring the top safe area
-        .onAppear {
-            presenter?.viewDidLoad()
-        }
+        .background(Color(.systemIndigo))
+                .edgesIgnoringSafeArea([.leading, .trailing]) // Respect the top safe area
+                .ignoresSafeArea(edges: .top) // Ignore safe area at the top, but...
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0) // Add the safe area inset back to avoid overlap
+                .onAppear {
+                    presenter?.viewDidLoad()
+                }
     }
 }
