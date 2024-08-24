@@ -4,7 +4,7 @@ struct ChatView: View {
     @ObservedObject var mediator: ChatViewMediator
     var presenter: ChatPresenterInputProtocol?
     @State private var newMessage: String = ""
-    
+
     var body: some View {
         VStack {
             ScrollViewReader { scrollViewProxy in
@@ -15,13 +15,15 @@ struct ChatView: View {
                                 .id(message.id)
                         }
                     }
-                    .padding()
+                    .padding(.horizontal)
+                    .padding(.top, 16) // Provide additional padding from the top
                     .onChange(of: mediator.messages.count) { _ in
                         withAnimation {
                             scrollViewProxy.scrollTo(mediator.messages.last?.id, anchor: .bottom)
                         }
                     }
                 }
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top) // Respect the safe area
             }
             
             HStack {
@@ -43,7 +45,7 @@ struct ChatView: View {
             }
             .padding()
         }
-        .background(Color(.systemIndigo).edgesIgnoringSafeArea(.all))
+        .background(Color(.systemIndigo).edgesIgnoringSafeArea([.leading, .trailing, .bottom])) // Avoid ignoring the top safe area
         .onAppear {
             presenter?.viewDidLoad()
         }

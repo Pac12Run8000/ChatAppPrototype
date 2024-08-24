@@ -195,6 +195,7 @@
 		097EDF362C79A7B7009F2DB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */,
 				097EDF372C79A7CA009F2DB8 /* ChatView.swift */,
 			);
 			path = Views;
@@ -211,7 +212,6 @@
 		097EDF3C2C79AB09009F2DB8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
