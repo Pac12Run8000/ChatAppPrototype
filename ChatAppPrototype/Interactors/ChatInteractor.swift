@@ -5,11 +5,11 @@ class ChatInteractor: ChatInteractorInputProtocol {
     weak var presenter: ChatInteractorOutputProtocol?
     private var messages: [ChatMessage] = [
         ChatMessage(text: "Hi Dave. 👋", isUser: false),
-        ChatMessage(text: "Mein Name ist Tom, ich bin verantwortlich für Human Resources bei AutoHaus DIN.", isUser: false),
-        ChatMessage(text: "Wie alt bist du?", isUser: false),
+        ChatMessage(text: "Hello, let's do this", isUser: false),
+        ChatMessage(text: "I think that Dimitri is up for a world title", isUser: false),
         ChatMessage(text: "Hi Tom. 👋", isUser: true),
-        ChatMessage(text: "Ich bin 21 Jahre alt.", isUser: true),
-        ChatMessage(text: "Perfekt, danke. Wieviel Jahre Berufserfahrung hast du?", isUser: false)
+        ChatMessage(text: "Let's travel to Japan.", isUser: true),
+        ChatMessage(text: "Let's travel to Brazil and the UK?", isUser: false)
     ]
 
     func sendMessage(_ text: String) {
