@@ -8,15 +8,15 @@ struct MainTabView: View {
    
     var body: some View {
         TabView {
-            ChatRouter.createChatModule()
-                .tabItem {
-                    Image(systemName: "message.fill")
-                    Text("Chats")
-                }
             Text("Contacts")
                 .tabItem {
                     Image(systemName: "person.2.fill")
                     Text("Contacts")
+                }
+            ChatRouter.createChatModule()
+                .tabItem {
+                    Image(systemName: "message.fill")
+                    Text("Chats")
                 }
             Text("Settings")
                 .tabItem {
