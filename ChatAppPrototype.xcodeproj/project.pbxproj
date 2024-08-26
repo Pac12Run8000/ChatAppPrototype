@@ -27,6 +27,7 @@
 		097EDF3E2C79AB20009F2DB8 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */; };
 		097EDF402C7BDE1B009F2DB8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF3F2C7BDE1B009F2DB8 /* MainTabView.swift */; };
 		097EDF422C7BE34F009F2DB8 /* extensions+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF412C7BE34F009F2DB8 /* extensions+Colors.swift */; };
+		097EDF442C7BF3A1009F2DB8 /* TypingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EDF432C7BF3A1009F2DB8 /* TypingTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		097EDF3F2C7BDE1B009F2DB8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		097EDF412C7BE34F009F2DB8 /* extensions+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensions+Colors.swift"; sourceTree = "<group>"; };
+		097EDF432C7BF3A1009F2DB8 /* TypingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				097EDF3D2C79AB20009F2DB8 /* ChatBubble.swift */,
 				097EDF372C79A7CA009F2DB8 /* ChatView.swift */,
 				097EDF3F2C7BDE1B009F2DB8 /* MainTabView.swift */,
+				097EDF432C7BF3A1009F2DB8 /* TypingTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				097EDF3B2C79A925009F2DB8 /* ChatViewMediator.swift in Sources */,
 				097EDF2C2C79A660009F2DB8 /* ChatPresenter.swift in Sources */,
 				097EDF292C79A5FF009F2DB8 /* ChatInteractorInputProtocol.swift in Sources */,
+				097EDF442C7BF3A1009F2DB8 /* TypingTextView.swift in Sources */,
 				097EDF1B2C798713009F2DB8 /* ChatMessage.swift in Sources */,
 				097EDF352C79A751009F2DB8 /* ChatRouterProtocol.swift in Sources */,
 				097EDF402C7BDE1B009F2DB8 /* MainTabView.swift in Sources */,

@@ -3,6 +3,7 @@ import SwiftUI
 struct ChatBubble: View {
     var message: String
     var isUser: Bool
+    var animateTyping: Bool
 
     var body: some View {
         HStack {
@@ -10,7 +11,7 @@ struct ChatBubble: View {
                 Spacer()
             }
 
-            Text(message)
+            TypingTextView(fullText: message, animateTyping: animateTyping)
                 .padding()
                 .background(isUser ? Color.blue : Color(.systemGray4))
                 .foregroundColor(isUser ? .white : .black)
@@ -23,4 +24,3 @@ struct ChatBubble: View {
         }
     }
 }
-
